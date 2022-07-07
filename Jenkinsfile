@@ -26,8 +26,20 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        input(message: 'Are yoy to deploy', ok: 'Yes ')
+        
         echo 'Deployment completed'
+      }
+    }
+    stage('Monitoring') {
+      steps {
+        
+        echo 'Monitoring completed'
+      }
+    }
+    stage('Dev') {
+      steps {
+       
+        echo 'Dev completed'
       }
     }
 
