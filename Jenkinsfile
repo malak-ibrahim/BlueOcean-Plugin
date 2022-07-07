@@ -43,6 +43,14 @@ pipeline {
       }
     }
 
+
+    stage('Dev1') {
+      steps {
+       
+        echo 'Dev completed'
+      }
+    }
+
     stage('Notify for new Bulid ') {
       steps {
         echo 'New JOb done '
